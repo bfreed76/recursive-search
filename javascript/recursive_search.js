@@ -1,5 +1,12 @@
 function recursiveSearch(arr, target) {
-  // type your code here
+  // solve iteratively first
+
+  for (const value of arr) {
+    if (value === target ) {
+      return true
+    }
+  }
+  return false
 }
 
 if (require.main === module) {
@@ -15,5 +22,8 @@ if (require.main === module) {
 
 module.exports = recursiveSearch;
 
-// Please add your pseudocode to this file
+// First, define base case and return statement. Then define
+// any additional output and the recursive function call with
+// any required changes to parameters.
+
 // And a written explanation of your solution
